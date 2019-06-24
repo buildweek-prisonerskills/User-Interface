@@ -143,6 +143,8 @@ h5 {
   margin: 0.5rem 0;
 }
 body {
+  width: 90%;
+  margin: 0 auto 0 5px;
   background: url(sweettexture.jpg);
 }
 header {
@@ -182,11 +184,11 @@ footer {
   height: 2rem;
 }
 .headline {
-  background-color: gray;
   display: flex;
   justify-content: space-around;
 }
 .headline .tagline {
+  background-color: gray;
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -194,7 +196,7 @@ footer {
   align-items: space-evenly;
 }
 .headline .tagline h1 {
-  text-align: left;
+  text-align: center;
 }
 .headline .tagline h3 {
   margin: 1rem;
