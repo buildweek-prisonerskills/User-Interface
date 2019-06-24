@@ -1,0 +1,85 @@
+/* /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+
+/* <--------------------------------------CSS RESET-----------------------------------> */
+
+
+
+ *   {
+        box-sizing: border-box;
+     }
+
+html {
+    font-size: 62.5%;
+  }
+  
+  .container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #EFECEC;
+  }
+
+
+  .title {
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  h1{
+      font-size: 3rem;
+  }
+
+  img {
+    max-width:50%;
+    height: auto;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+    
+  }
+
+  .maincontent {
+
+    display: flex;
+    justify-content: center;
+    }
+    
+    
+    .left {
+        margin: 10px;
+        width: 40%;
+    }
+    
+    .right {
+        margin: 10px;
+        width: 40%;
+    }	
+  
+    .btn{
+        display: flex;
+        justify-content: center;
+    }
+
+  button:hover{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+    
+  }
+
+    
+     
+  
