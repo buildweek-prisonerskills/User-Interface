@@ -144,7 +144,13 @@ body {
 .wrapper .bottom-container .text-container .para-txt p {
   padding: 20px 0;
 }
+.wrapper .bottom-container .text-container button {
+  margin-top: 35px;
+  width: 40%;
+  background-color: white;
+  border: 2px solid black;
+}
 html {
   font-size: 62.5%;
-  font-family: 'Rufina', sans-serif;
+  font-family: 'Rufina', serif;
 }
