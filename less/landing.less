@@ -14,6 +14,12 @@ body {
         background-color: #ffffff88;
         display: flex;
 
+        @media @mobile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
         .logo-text {
             width: 18%;
             height: 100%;
@@ -22,7 +28,15 @@ body {
             align-items: center;
             
             h1{
-                font-size: 2.5rem;
+                font-size: 3.5rem;
+                font-family: 'Work Sans', serif;
+                padding-left: 70px;
+                text-decoration: underline;
+                
+                @media @mobile {
+                    padding: 0;
+                    margin-top: 20px;
+                }
             }
         }
 
@@ -32,14 +46,22 @@ body {
             display: flex;
             justify-content: space-around;
             align-items: center;
+
+            @media @mobile {
+                justify-content: space-between;
+                width: 100%;
+            }
         
             a {
-                font-size: 2rem;
+                font-size: 2.4rem;
                 text-decoration: none;
                 color: black;
+                @media @mobile {
+                    padding: 0 20px;
+                }
             
                 &:hover {
-                    text-decoration: underline;
+                    color: @darkgray;
                 }
             }
             
@@ -51,10 +73,17 @@ body {
     .bottom-container {
         padding: 100px 140px;
         color: white;
+        @media @mobile {
+            padding: 50px 0 80px 50px;
+        }
+
 
         .text-container {
             width: 70%;
             opacity: 0.7;
+            @media @mobile {
+                width: 90%;
+            }
             
             .title-container {
                 font-size: 5rem;
@@ -70,10 +99,23 @@ body {
             }
 
             button {
-                margin-top: 35px;
+                margin-top: 45px;
                 width: 40%;
+                height: 50px;
                 background-color: white;
-                border: 2px solid black;
+                border: none;
+                font-size: 2rem;
+                font-weight: bold;
+                font-family: inherit;
+                border-radius: 3px;
+                @media @mobile {
+                    width: 100%;
+                    margin-top: 30px;
+                }
+
+                &:hover {
+                    background-color: @lightgray;
+                }
             }
         }
     

@@ -101,6 +101,13 @@ body {
   background-color: #ffffff88;
   display: flex;
 }
+@media (max-width: 500px) {
+  .wrapper .top-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .wrapper .top-bar .logo-text {
   width: 18%;
   height: 100%;
@@ -109,7 +116,16 @@ body {
   align-items: center;
 }
 .wrapper .top-bar .logo-text h1 {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
+  font-family: 'Work Sans', serif;
+  padding-left: 70px;
+  text-decoration: underline;
+}
+@media (max-width: 500px) {
+  .wrapper .top-bar .logo-text h1 {
+    padding: 0;
+    margin-top: 20px;
+  }
 }
 .wrapper .top-bar .links-container {
   width: 80%;
@@ -118,21 +134,42 @@ body {
   justify-content: space-around;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .wrapper .top-bar .links-container {
+    justify-content: space-between;
+    width: 100%;
+  }
+}
 .wrapper .top-bar .links-container a {
-  font-size: 2rem;
+  font-size: 2.4rem;
   text-decoration: none;
   color: black;
 }
+@media (max-width: 500px) {
+  .wrapper .top-bar .links-container a {
+    padding: 0 20px;
+  }
+}
 .wrapper .top-bar .links-container a:hover {
-  text-decoration: underline;
+  color: #534B52;
 }
 .wrapper .bottom-container {
   padding: 100px 140px;
   color: white;
 }
+@media (max-width: 500px) {
+  .wrapper .bottom-container {
+    padding: 50px 0 80px 50px;
+  }
+}
 .wrapper .bottom-container .text-container {
   width: 70%;
   opacity: 0.7;
+}
+@media (max-width: 500px) {
+  .wrapper .bottom-container .text-container {
+    width: 90%;
+  }
 }
 .wrapper .bottom-container .text-container .title-container {
   font-size: 5rem;
@@ -145,10 +182,24 @@ body {
   padding: 20px 0;
 }
 .wrapper .bottom-container .text-container button {
-  margin-top: 35px;
+  margin-top: 45px;
   width: 40%;
+  height: 50px;
   background-color: white;
-  border: 2px solid black;
+  border: none;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: inherit;
+  border-radius: 3px;
+}
+@media (max-width: 500px) {
+  .wrapper .bottom-container .text-container button {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+.wrapper .bottom-container .text-container button:hover {
+  background-color: #84828F;
 }
 html {
   font-size: 62.5%;
