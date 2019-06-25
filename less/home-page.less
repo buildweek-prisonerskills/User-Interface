@@ -1,24 +1,107 @@
-.headline {
+header {
+    padding: 5px;
+    width: 100%;
+    position: fixed;
+    background-color: @nav-background;
     display: flex;
-    justify-content: space-around;
-    .tagline{
-        background-color: gray;
-        padding: 1rem;
+    justify-content: space-between;
+    .logo {
+        width: 30%;
+        margin-left: 5px;
         display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: space-evenly;
-        h1 {
-            text-align: center;
-        }
-        h3 {
+        align-items: center;
+    }
+    nav {
+        width: 68%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        a {
+            color: @navigation-text;
             margin: 1rem;
+            text-decoration: none;
+            font-size: 1.3rem;
+        }    
+    }
+}
+
+a:hover {
+    color: white;
+    font-weight: bold;
+    text-decoration: overline;
+}
+
+.main-container{
+    margin-bottom: 2rem;
+    .headline {
+        padding-top: 3.5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        // background: linear-gradient(to left, @nav-background, white);
+
+        .headline-text{
+            padding: 3rem;
+            display:flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .tagline{
+            border: 1px solid red;
+            // width: 35%;
+            padding: 0rem;
+            display: flex;
+            flex-direction: column;
+            h1 {
+                color: @Light-Gray;
+            }
+            .tag-1 {
+                text-align: left;
+            }
+            .tag-2 {
+                text-align: right;
+            }
+        }
+        .sub-headers {
+            border: 1px solid black;
+            display:flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            .sub-header-1 {
+                h4 {
+                    text-align: left;
+                    margin: 1rem;
+                    color: @Dark-Gray;
+                }
+            }
+            .sub-header-2 {
+                h4 {
+                    text-align: center;
+                    margin: 1rem;
+                    color: @Dark-Gray;
+                }
+            }
+            .sub-header-3 {
+                h4 {
+                    text-align: right;
+                    margin: 1rem;
+                    color: @Dark-Gray;
+                }
+            }
+        }
+        .main-img {
+            width: 65%;
+            height: 99%;
+            img{
+                width: 100%;
+            }
         }
     }
 }
 
 .main-blurb {
     margin: 1rem;
+    
 }
 
 .contact-info {
@@ -52,6 +135,3 @@
 }
 
 
-.main-container {
-    background-image: url("paper.gif");
-}
