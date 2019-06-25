@@ -109,7 +109,7 @@ body {
   align-items: center;
 }
 .wrapper .top-bar .logo-text h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 .wrapper .top-bar .links-container {
   width: 80%;
@@ -119,12 +119,30 @@ body {
   align-items: center;
 }
 .wrapper .top-bar .links-container a {
-  font-size: 1.6rem;
+  font-size: 2rem;
   text-decoration: none;
   color: black;
 }
 .wrapper .top-bar .links-container a:hover {
   text-decoration: underline;
+}
+.wrapper .bottom-container {
+  padding: 100px 140px;
+  color: white;
+}
+.wrapper .bottom-container .text-container {
+  width: 70%;
+  opacity: 0.7;
+}
+.wrapper .bottom-container .text-container .title-container {
+  font-size: 5rem;
+  padding-bottom: 20px;
+}
+.wrapper .bottom-container .text-container .para-txt {
+  font-size: 1.8rem;
+}
+.wrapper .bottom-container .text-container .para-txt p {
+  padding: 20px 0;
 }
 html {
   font-size: 62.5%;
