@@ -185,19 +185,20 @@ a:hover {
   margin-bottom: 2rem;
 }
 .main-container .headline {
-  padding-top: 3.5rem;
+  padding-top: 2.5rem;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  background: linear-gradient(to bottom, #7395ae, white);
 }
 .main-container .headline .headline-text {
-  padding: 3rem;
+  padding: 2rem;
+  width: 44%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 .main-container .headline .tagline {
-  border: 1px solid red;
   padding: 0rem;
   display: flex;
   flex-direction: column;
@@ -212,7 +213,6 @@ a:hover {
   text-align: right;
 }
 .main-container .headline .sub-headers {
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -233,14 +233,20 @@ a:hover {
   color: #534B52;
 }
 .main-container .headline .main-img {
-  width: 65%;
+  width: 45%;
   height: 99%;
 }
 .main-container .headline .main-img img {
   width: 100%;
 }
 .main-blurb {
-  margin: 1rem;
+  margin: 0 1rem 0.5rem 1rem;
+  display: flex;
+  justify-content: center;
+  font-style: italic;
+  border-top: 2.5px solid #7395ae;
+  border-bottom: 2.5px solid #7395ae;
+  padding: 1rem;
 }
 .contact-info {
   margin: 1rem;
