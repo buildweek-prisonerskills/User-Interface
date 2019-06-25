@@ -1,4 +1,6 @@
 
+@mobile:~'(max-width: 500px)';
+@phone: @mobile;
 
 * {
     box-sizing: border-box;
@@ -16,6 +18,9 @@
   margin: 0 auto;
   background-color: #EFECEC;
   
+  @media @mobile {
+    flex-direction: column;
+  }
   }
 
   

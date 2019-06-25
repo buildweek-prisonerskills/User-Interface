@@ -138,15 +138,27 @@ html {
   margin: 0 auto;
   background-color: #EFECEC;
 }
+@media (max-width: 500px) {
+  .container {
+    flex-direction: column;
+  }
+}
 nav {
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: space-around;
 }
 nav a {
   text-decoration: none;
   font-size: 1.4rem;
   font-weight: bold;
-  padding: 20px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+@media (max-width: 500px) {
+  nav a {
+    padding: 10px 30px;
+  }
 }
 .footer {
   width: 100%;
@@ -154,7 +166,7 @@ nav a {
 }
 .footer p {
   text-align: center;
-  font-size: 1.6rem;
+  font-size: 1rem;
   padding: 10px;
 }
 .title {
@@ -163,40 +175,55 @@ nav a {
 }
 h1 {
   font-size: 3rem;
+  padding-bottom: 20px;
 }
-img {
-  max-width: 50%;
+.image1 {
+  display: flex;
+  justify-content: center;
+}
+.image1 img {
+  max-width: 70%;
   height: auto;
   display: block;
-  margin-left: 25%;
-  margin-right: 25%;
+  padding-bottom: 20px;
 }
 .maincontent {
   display: flex;
   justify-content: center;
+  padding-bottom: 20px;
 }
 .left {
   margin: 10px;
-  width: 40%;
+  width: 35%;
+}
+.left h3 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding-bottom: 5px;
 }
 .right {
   margin: 10px;
-  width: 40%;
+  width: 35%;
+}
+.right h3 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding-bottom: 5px;
 }
 .btn {
   display: flex;
   justify-content: center;
 }
-button:hover {
-  background-color: #4CAF50;
-  /* Green */
+button {
+  background-color: black;
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 5px 15px;
+  margin-bottom: 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 1rem;
+  font-size: 1.5rem;
   border-radius: 4px;
   transition-duration: 0.4s;
 }
