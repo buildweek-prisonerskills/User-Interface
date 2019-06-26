@@ -1,27 +1,56 @@
 header {
-    padding: 5px;
+    border: 1px solid red;
+    // padding: 2%;
     width: 100%;
-    position: fixed;
+    // position: fixed;
     background-color: @nav-background;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    @media(max-width: 500px) {
+        flex-direction: column;
+
+    }
     .logo {
+        border: 1px solid red;
         width: 30%;
         margin-left: 5px;
         display: flex;
         align-items: center;
+        h3 {
+            font-size: 2rem;
+        }
+        @media (max-width: 500px) {
+            text-align: center;
+            width: 80%;
+            justify-content: center;
+            h3 {
+            font-size: 150%;
+            
+            }
+        }
     }
     nav {
+        border: 1px solid red;
         width: 68%;
         display: flex;
         justify-content: flex-end;
         align-items: center;
+        @media (max-width: 500px) {
+            flex-direction: column;
+            width: 80%;
+            justify-content: center;
+        }
         a {
             color: @navigation-text;
             margin: 1rem;
             text-decoration: none;
             font-size: 1.3rem;
+            
         }    
+    }
+    @media (max-width: 500px) {
+        flex-direction: column;
     }
 }
 
