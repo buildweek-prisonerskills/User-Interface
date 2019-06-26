@@ -5,8 +5,8 @@ class TabHeader {
         console.log("here",this.element)
         this.data = this.element.dataset.tab;
 
-        this.item = document.querySelector(`.a-tabs[data-tab="${this.data}"]`);
-
+        this.item = document.querySelector(`.a-tab[data-tab="${this.data}"]`);
+        console.log("maybe here", this.item)
         this.tabItem = new TabItem(this.item);
 
         this.element.addEventListener("click", () => {
@@ -36,12 +36,10 @@ class TabItem {
         const items = document.querySelectorAll(".a-tab");
         items.forEach(item => {
             item.classList.remove("tab-item-selected")
-          
         })
-
+        console.log("this.element at 40:", this.element);
         this.element.classList.add("tab-item-selected");
     }
 }
 
 let links = document.querySelectorAll('.tab-link').forEach( link => new TabHeader(link));
-console.log("links at end:")
