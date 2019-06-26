@@ -299,23 +299,27 @@ a:hover {
 }
 .main-blurb {
   margin: 1 1rem 0.5rem 1rem;
+  width: 100%;
   display: flex;
   justify-content: center;
   font-style: italic;
   border-top: 2.5px solid #7395ae;
   border-bottom: 2.5px solid #7395ae;
-  padding: 1rem;
+}
+.main-blurb h4 {
+  width: 70%;
+  font-size: 1.8rem;
 }
 .button-container {
-  margin: 1%;
+  margin: 4%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
 }
 .button-container button {
-  font-size: 24px;
-  background-color: #7395ae;
+  font-size: 2.4rem;
+  background: linear-gradient(to bottom, #2F4F4F, #696969);
   color: #d3d8df;
   border-radius: 12px;
   padding: 2%;
@@ -339,6 +343,17 @@ a:hover {
 @media (max-width: 500px) {
   .contact-info h5 {
     font-size: 120%;
+  }
+}
+.tag-1 {
+  right: 150%;
+}
+.tag-1 h1 {
+  animation: rotate(10deg);
+}
+@keyframes text-slide {
+  0% {
+    transform: translateX(-250px) scale(0);
   }
 }
 header {
@@ -440,55 +455,73 @@ a:hover {
   padding: 0.5rem;
 }
 .tabs-container {
-  padding: 2rem;
-  width: 60%;
-  margin: 5% auto;
+  padding: 0.5rem;
+  width: 65%;
+  margin: 0 auto 4%;
   display: flex;
-  border: 1px solid #5D5c61;
-  box-shadow: 2px 4px 5px #534B52;
   border-radius: 10px;
   overflow: hidden;
 }
 .tabs-container .tabs {
   width: 100%;
-  background-color: #d4dee6;
+  background-color: #b4c6d3;
   border-radius: 10px;
   box-shadow: 2px 4px 5px #534B52;
+  padding: 2%;
 }
 .tabs-container .tabs .tabs-content {
-  width: 100%;
+  border-top: 1px solid black;
+  width: 80%;
   display: flex;
   justify-content: center;
-  padding: 4%;
+  padding: 2%;
 }
 .tabs-container .tabs .a-tab {
   display: none;
-  width: 75%;
+  width: 85%;
 }
 .tabs-container .tabs .a-tab .tab-item-text p {
   color: #534B52;
+  font-size: 150%;
 }
 .tabs-container .tabs .tab-item-selected {
   display: block;
 }
 .tabs-container .tabs .tab-headers {
   display: flex;
-  width: 100%;
-  justify-content: space-evenly;
+  width: 80%;
+}
+.tabs-container .tabs .tab-headers h4 {
+  font-size: 1.3rem;
 }
 .tabs-container .tabs .tab-link {
-  width: 20%;
-  border: 4px solid white;
-  background-color: #d3d8df;
+  display: flex;
+  align-items: center;
+  height: 4rem;
+  background-color: #577c97;
+  color: white;
   padding: 0 3rem 0 1rem;
+  border-right: 4px solid #b4c6d3;
   cursor: pointer;
 }
 .tabs-container .tabs .tab-link:hover {
   background-color: #7395ae;
 }
 .tabs-container .tabs .tab-link-selected {
-  background-color: lightblue;
+  background-color: white;
+  color: black;
 }
 .tabs-container .tabs .tab-link-selected:hover {
   background-color: #7395ae98;
+}
+.outer-tabs-container {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 3%;
+  display: block;
+}
+.outer-tabs-container .learn-how {
+  width: 80%;
+  text-align: center;
+  margin-bottom: 0;
 }
