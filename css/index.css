@@ -328,7 +328,7 @@ a:hover {
   background-color: #7395ae;
 }
 .tabs-container .tabs .tab-link-selected {
-  background-color: gray;
+  background-color: lightblue;
 }
 .tabs-container .tabs .tab-link-selected:hover {
   background-color: #7395ae98;
