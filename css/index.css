@@ -148,6 +148,12 @@ nav {
   align-items: center;
   justify-content: space-around;
 }
+@media (max-width: 500px) {
+  nav {
+    flex-direction: column-reverse;
+    padding-bottom: 0;
+  }
+}
 nav a {
   text-decoration: none;
   font-size: 1.4rem;
@@ -177,6 +183,12 @@ h1 {
   font-size: 3rem;
   padding-bottom: 20px;
 }
+@media (max-width: 500px) {
+  h1 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+}
 .image1 {
   display: flex;
   justify-content: center;
@@ -186,6 +198,11 @@ h1 {
   height: auto;
   display: block;
   padding-bottom: 20px;
+}
+@media (max-width: 500px) {
+  .image1 img {
+    max-width: 100%;
+  }
 }
 .maincontent {
   display: flex;
@@ -214,16 +231,19 @@ h1 {
   display: flex;
   justify-content: center;
 }
-button {
-  background-color: black;
-  border: none;
-  color: white;
+.btn .button1 {
+  background-color: white;
+  color: black;
+  border: 2px solid grey;
   padding: 5px 15px;
   margin-bottom: 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
   font-size: 1.5rem;
   border-radius: 4px;
   transition-duration: 0.4s;
+  cursor: pointer;
+}
+.btn .button1:hover {
+  background-color: black;
+  color: white;
+  border: 2px solid grey;
 }

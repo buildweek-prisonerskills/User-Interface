@@ -1,20 +1,29 @@
-//homepage
+
 
 .title {
 
     display: flex;
     justify-content: center;
     
+    
+    
     }
     
     h1{
       font-size: 3rem;
       padding-bottom: 20px;
+      @media @mobile{
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+      
+      
       
     }
     .image1{
         display: flex;
         justify-content: center;
+        
         
           
 
@@ -23,6 +32,9 @@
             height: auto;
             display: block;
             padding-bottom: 20px;
+            @media @mobile {
+                max-width: 100%;
+            }
         }
     }
     
@@ -62,20 +74,26 @@
     .btn{
         display: flex;
         justify-content: center;
-    }
     
-    button{
-    background-color: black; 
-    border: none;
-    color: white;
+    
+    .button1{
+     
+    background-color:white;
+    color: black;
+    border: 2px solid grey;
     padding: 5px 15px;
     margin-bottom: 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
     font-size: 1.5rem;
     border-radius: 4px;
     transition-duration: 0.4s;
-    }
+    cursor:pointer;
 
+    }
+    .button1:hover{
+        background-color: black;
+        color: white;
+        border: 2px solid grey;
+        
+    }
+}
 
