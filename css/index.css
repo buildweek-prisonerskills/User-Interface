@@ -273,33 +273,14 @@ video {
 }
 .aboutwrapper .page-content {
   display: flex;
-  /* end of verticalnav */
   /* end of navcontent */
-}
-.aboutwrapper .page-content .verticalnav {
-  width: 13%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-content: space-around;
-}
-.aboutwrapper .page-content .verticalnav a {
-  margin: 75px 0;
-  text-decoration: none;
-  color: #000000;
-  font-size: 2.4rem;
-  font-weight: bold;
-  padding-left: 80px;
-}
-.aboutwrapper .page-content .verticalnav a:hover {
-  color: #534B52;
 }
 .aboutwrapper .page-content .navcontent {
   width: 85%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-top: 75px;
+  margin-top: 65px;
 }
 .aboutwrapper .page-content .navcontent .text-content {
   width: 35%;
@@ -310,27 +291,6 @@ video {
 }
 .aboutwrapper .page-content .navcontent .text-content p {
   margin-bottom: 50px;
-}
-.aboutwrapper .page-content .navcontent .img-content1 {
-  width: 600px;
-  height: 600px;
-  background-image: url(/site-imgs/prison-yard.jpg);
-  background-size: cover;
-  border: #534B52 solid 8px;
-}
-.aboutwrapper .page-content .navcontent .img-content2 {
-  width: 600px;
-  height: 600px;
-  background-image: url(/site-imgs/heat-map.jpeg);
-  background-size: cover;
-  border: #534B52 solid 8px;
-}
-.aboutwrapper .page-content .navcontent .img-content3 {
-  width: 600px;
-  height: 600px;
-  background-image: url(/site-imgs/working-man.jpeg);
-  background-size: cover;
-  border: #534B52 solid 8px;
 }
 .aboutwrapper .page-content .navcontent .profile-card {
   color: white;
@@ -395,13 +355,16 @@ video {
 }
 .aboutwrapper .page-content .navcontent .profile-card .profile-title h3 {
   font-size: 2rem;
+  padding-bottom: 9px;
 }
 .aboutwrapper .page-content .navcontent .profile-card .profile-title h4 {
   font-size: 1.5rem;
+  padding-bottom: 9px;
 }
 .aboutwrapper .page-content .navcontent .profile-card .profile-title p {
   font-size: 1.5rem;
   width: 90%;
+  padding-bottom: 9px;
 }
 /* end of wrapper*/
 html {
