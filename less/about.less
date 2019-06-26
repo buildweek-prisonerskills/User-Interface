@@ -2,7 +2,9 @@
     width: 100%;
     height: 100%;
     min-height: 100%;
-    background-color: black;
+    background-image: url(/site-imgs/about-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
 
     .top-bar {
         width: 100vw;
@@ -59,10 +61,159 @@
                 &:hover {
                     color: @darkgray;
                 }
-            }
-            
+            }   
         }
-
-
     }
-}
+
+    .page-content {
+        display: flex;
+
+        .verticalnav {
+            width: 13%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-content: space-around;
+
+            a {
+                margin: 75px 0;
+                text-decoration: none;
+                color: @black;
+                font-size: 2.4rem;
+                font-weight: bold;
+                padding-left: 80px;
+                &:hover {
+                    color: @darkgray;
+                }
+            }
+        } /* end of verticalnav */
+
+        .navcontent {
+            width: 85%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-top: 75px;
+            .text-content {
+                width: 35%;
+                margin-top: 180px;
+                color: @black;
+                font-size: 2rem;
+                font-weight: bold;
+                
+                p {
+                    margin-bottom: 50px;
+                }
+            }
+
+            .img-content1 {
+                width: 600px;
+                height: 600px;
+                background-image: url(/site-imgs/prison-yard.jpg);
+                background-size: cover;
+                border: @darkgray solid 8px;
+            }
+
+            .img-content2 {
+                width: 600px;
+                height: 600px;
+                background-image: url(/site-imgs/heat-map.jpeg);
+                background-size: cover;
+                border: @darkgray solid 8px;
+            }
+
+            .img-content3 {
+                width: 600px;
+                height: 600px;
+                background-image: url(/site-imgs/working-man.jpeg);
+                background-size: cover;
+                border: @darkgray solid 8px;
+            }
+
+            .profile-card {
+                color: white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+             
+                .profile-img1{
+                    height: 150px;
+                    width: 150px;
+                    background-image: url(/site-imgs/jon-s.JPG);
+                    background-size: cover;
+                    border: @darkgray solid 8px;
+                }
+
+                .profile-img2{
+                    height: 150px;
+                    width: 150px;
+                    background-image: url(/site-imgs/kayla-c.JPG);
+                    background-size: cover;
+                    border: @darkgray solid 8px;
+                }
+
+                .profile-img3{
+                    height: 150px;
+                    width: 150px;
+                    background-image: url(/site-imgs/justin-t.JPG);
+                    background-size: cover;
+                    border: @darkgray solid 8px;
+                }
+
+                .profile-img4{
+                    height: 150px;
+                    width: 150px;
+                    background-image: url(/site-imgs/jason-a.JPG);
+                    background-size: cover;
+                    border: @darkgray solid 8px;
+                }
+
+                .profile-img5{
+                    height: 150px;
+                    width: 150px;
+                    background-image: url(/site-imgs/jay-w.JPG);
+                    background-size: cover;
+                    border: @darkgray solid 8px;
+                }
+
+                .profile-img6{
+                    height: 150px;
+                    width: 150px;
+                    background-image: url(/site-imgs/brandon-g.JPG);
+                    background-size: cover;
+                    border: @darkgray solid 8px;
+                }
+
+                .profile-img7{
+                    height: 150px;
+                    width: 150px;
+                    background-image: url(/site-imgs/dak-h.JPG);
+                    background-size: cover;
+                    border: @darkgray solid 8px;
+                }
+
+                .profile-title{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 160px;
+
+                    h3 {
+                        font-size: 2rem;
+                    }
+                    h4 {
+                        font-size: 1.5rem;
+                    }
+
+                    p {
+                        font-size: 1.5rem;
+                        width: 90%;
+                    }
+                }
+            }
+
+
+        } /* end of navcontent */
+
+    } /* end of page-content */
+} /* end of wrapper*/

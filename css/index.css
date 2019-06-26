@@ -208,7 +208,10 @@ video {
   width: 100%;
   height: 100%;
   min-height: 100%;
-  background-color: black;
+  background-image: url(/site-imgs/about-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  /* end of page-content */
 }
 .aboutwrapper .top-bar {
   width: 100vw;
@@ -268,6 +271,139 @@ video {
 .aboutwrapper .top-bar .links-container a:hover {
   color: #534B52;
 }
+.aboutwrapper .page-content {
+  display: flex;
+  /* end of verticalnav */
+  /* end of navcontent */
+}
+.aboutwrapper .page-content .verticalnav {
+  width: 13%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+}
+.aboutwrapper .page-content .verticalnav a {
+  margin: 75px 0;
+  text-decoration: none;
+  color: #000000;
+  font-size: 2.4rem;
+  font-weight: bold;
+  padding-left: 80px;
+}
+.aboutwrapper .page-content .verticalnav a:hover {
+  color: #534B52;
+}
+.aboutwrapper .page-content .navcontent {
+  width: 85%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 75px;
+}
+.aboutwrapper .page-content .navcontent .text-content {
+  width: 35%;
+  margin-top: 180px;
+  color: #000000;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.aboutwrapper .page-content .navcontent .text-content p {
+  margin-bottom: 50px;
+}
+.aboutwrapper .page-content .navcontent .img-content1 {
+  width: 600px;
+  height: 600px;
+  background-image: url(/site-imgs/prison-yard.jpg);
+  background-size: cover;
+  border: #534B52 solid 8px;
+}
+.aboutwrapper .page-content .navcontent .img-content2 {
+  width: 600px;
+  height: 600px;
+  background-image: url(/site-imgs/heat-map.jpeg);
+  background-size: cover;
+  border: #534B52 solid 8px;
+}
+.aboutwrapper .page-content .navcontent .img-content3 {
+  width: 600px;
+  height: 600px;
+  background-image: url(/site-imgs/working-man.jpeg);
+  background-size: cover;
+  border: #534B52 solid 8px;
+}
+.aboutwrapper .page-content .navcontent .profile-card {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.aboutwrapper .page-content .navcontent .profile-card .profile-img1 {
+  height: 150px;
+  width: 150px;
+  background-image: url(/site-imgs/jon-s.JPG);
+  background-size: cover;
+  border: #534B52 solid 8px;
+}
+.aboutwrapper .page-content .navcontent .profile-card .profile-img2 {
+  height: 150px;
+  width: 150px;
+  background-image: url(/site-imgs/kayla-c.JPG);
+  background-size: cover;
+  border: #534B52 solid 8px;
+}
+.aboutwrapper .page-content .navcontent .profile-card .profile-img3 {
+  height: 150px;
+  width: 150px;
+  background-image: url(/site-imgs/justin-t.JPG);
+  background-size: cover;
+  border: #534B52 solid 8px;
+}
+.aboutwrapper .page-content .navcontent .profile-card .profile-img4 {
+  height: 150px;
+  width: 150px;
+  background-image: url(/site-imgs/jason-a.JPG);
+  background-size: cover;
+  border: #534B52 solid 8px;
+}
+.aboutwrapper .page-content .navcontent .profile-card .profile-img5 {
+  height: 150px;
+  width: 150px;
+  background-image: url(/site-imgs/jay-w.JPG);
+  background-size: cover;
+  border: #534B52 solid 8px;
+}
+.aboutwrapper .page-content .navcontent .profile-card .profile-img6 {
+  height: 150px;
+  width: 150px;
+  background-image: url(/site-imgs/brandon-g.JPG);
+  background-size: cover;
+  border: #534B52 solid 8px;
+}
+.aboutwrapper .page-content .navcontent .profile-card .profile-img7 {
+  height: 150px;
+  width: 150px;
+  background-image: url(/site-imgs/dak-h.JPG);
+  background-size: cover;
+  border: #534B52 solid 8px;
+}
+.aboutwrapper .page-content .navcontent .profile-card .profile-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 160px;
+}
+.aboutwrapper .page-content .navcontent .profile-card .profile-title h3 {
+  font-size: 2rem;
+}
+.aboutwrapper .page-content .navcontent .profile-card .profile-title h4 {
+  font-size: 1.5rem;
+}
+.aboutwrapper .page-content .navcontent .profile-card .profile-title p {
+  font-size: 1.5rem;
+  width: 90%;
+}
+/* end of wrapper*/
 html {
   font-size: 62.5%;
   font-family: 'Rufina', serif;
