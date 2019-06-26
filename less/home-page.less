@@ -33,7 +33,7 @@
             display: block;
             padding-bottom: 20px;
             @media @mobile {
-                max-width: 100%;
+                max-width: 80%;
             }
         }
     }
@@ -46,23 +46,35 @@
     
     display: flex;
     justify-content: center;
-    padding-bottom: 20px
+    padding-bottom: 20px;
+    @media @mobile {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     }
     
     
     .left {
         margin: 10px;
         width: 35%;
+        @media @mobile {
+            width: 80%;
+        }
         h3{
             font-size: 1.1rem;
             font-weight: bold;
             padding-bottom: 5px;
+            
         }
     }
     
     .right {
         margin: 10px;
         width: 35%;
+        @media @mobile {
+            width: 80%;
+        }
         h3{
             font-size: 1.1rem;
             font-weight: bold;
@@ -97,3 +109,11 @@
     }
 }
 
+.cards {
+    display: flex;
+    flex-wrap:wrap;
+    // grid-template-columns: repeat(auto-fit, 2rem);
+    grid-gap: 1.5rem;
+    // justify-content: space-between;
+    align-content: flex-start;
+  }

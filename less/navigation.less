@@ -4,9 +4,12 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-direction: row-reverse;
+    
+
     @media @mobile{
         flex-direction: column-reverse;
-        padding-bottom: 0;
+        
         
     }
 
@@ -19,7 +22,9 @@ nav {
         padding-top: 10px;
    
         @media @mobile {
-            padding: 10px 30px;
+            padding: 5px;
+            border-top: 2px solid black;
+            border-width: 100%
             
         }
     }
