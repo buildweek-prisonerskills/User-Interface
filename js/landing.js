@@ -1,5 +1,6 @@
-const opaqueText = document.querySelectorAll('.para-txt p');
+const opaqueText = document.querySelectorAll('p');
 
-opaqueText.addEventListener('mouseover', function() {
-console.log('Event fired.')
-});
+opaqueText.forEach( elem => elem.addEventListener('mouseover', function() {
+    console.log('Event fired.')
+    }));
+
