@@ -239,6 +239,9 @@ video {
   padding-left: 70px;
   text-decoration: underline;
 }
+.aboutwrapper .top-bar .logo-text h1 a {
+  color: black;
+}
 @media (max-width: 500px) {
   .aboutwrapper .top-bar .logo-text h1 {
     padding: 0;
