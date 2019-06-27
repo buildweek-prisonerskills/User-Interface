@@ -146,16 +146,18 @@ h5 {
   font-size: 1.5vw;
 }
 p {
-  font-size: 1.5vw;
+  font-size: 1.75vw;
+  line-height: 150%;
 }
 footer {
+  font-family: 'Times New Roman', Times, serif;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #7395ae;
   height: 3.5rem;
   width: 100%;
-  font-size: 2rem;
+  font-size: 1.3rem;
 }
 header {
   position: fixed;
@@ -170,6 +172,7 @@ header {
 }
 @media (max-width: 500px) {
   header {
+    position: relative;
     padding-top: 5%;
     flex-direction: column;
     border-bottom: none;
@@ -239,12 +242,12 @@ a:hover {
 }
 @media (max-width: 500px) {
   .top-spacer {
-    height: 16rem;
+    height: 3rem;
   }
 }
 .main-outer-container {
   border: 1px solid black;
-  width: 91%;
+  width: 81%;
   margin: 0 auto;
   background-color: lightgray;
   background: linear-gradient(to bottom, #8b5d2e, #f4e9dd);
@@ -377,9 +380,9 @@ a:hover {
   align-items: center;
 }
 .button-container button {
-  font-size: 2.5vw;
+  font-size: 2vw;
   font-family: inherit;
-  height: 10vw;
+  height: 7vw;
   width: 30vw;
   background: linear-gradient(to top, #7395ae, #d4dee6);
   color: #534B52;
@@ -426,7 +429,7 @@ a:hover {
   flex-direction: column;
   align-items: center;
   border: 1px solid black;
-  width: 20rem;
+  width: 25rem;
   padding: 0.75rem;
   border-radius: 8px;
   margin: 1.5rem;
@@ -452,52 +455,89 @@ a:hover {
 .tabs-container {
   padding: 0.5rem;
   width: 65%;
+  height: 30rem;
   margin: 0 auto 4%;
   display: flex;
   border-radius: 10px;
   overflow: hidden;
 }
+@media (max-width: 800px) {
+  .tabs-container {
+    width: 75%;
+  }
+}
+@media (max-width: 500px) {
+  .tabs-container {
+    width: 85%;
+  }
+}
 .tabs-container .tabs {
-  width: 100%;
-  background-color: #b4c6d3;
+  width: 99%;
+  HEIGHT: 100%;
+  background-color: #7395ae;
   border-radius: 10px;
   box-shadow: 2px 4px 5px #534B52;
   padding: 2%;
 }
 .tabs-container .tabs .tabs-content {
   border-top: 1px solid black;
-  width: 80%;
+  width: 95%;
+  height: 6rem;
   display: flex;
   justify-content: center;
   padding: 2%;
 }
+@media (max-width: 800px) {
+  .tabs-container .tabs .tabs-content {
+    height: 10rem;
+  }
+}
 .tabs-container .tabs .a-tab {
   display: none;
-  width: 85%;
+  padding: 2%;
+  width: 90%;
+  height: 100%;
 }
 .tabs-container .tabs .a-tab .tab-item-text p {
-  color: #534B52;
-  font-size: 150%;
+  color: white;
+  font-size: 1.75rem;
+}
+@media (max-width: 700px) {
+  .tabs-container .tabs .a-tab .tab-item-text p {
+    font-size: 1.5rem;
+  }
 }
 .tabs-container .tabs .tab-item-selected {
   display: block;
 }
 .tabs-container .tabs .tab-headers {
   display: flex;
-  width: 80%;
+  width: 90%;
 }
 .tabs-container .tabs .tab-headers h4 {
-  font-size: 1.3rem;
+  font-size: 1.75rem;
+}
+@media (max-width: 800px) {
+  .tabs-container .tabs .tab-headers h4 {
+    font-size: 1.25rem;
+  }
 }
 .tabs-container .tabs .tab-link {
   display: flex;
   align-items: center;
-  height: 4rem;
+  height: 6rem;
+  width: 31%;
   background-color: #577c97;
   color: white;
-  padding: 0 3rem 0 1rem;
-  border-right: 4px solid #b4c6d3;
+  padding: 2rem 1rem;
+  border-right: 4px solid #7395ae;
   cursor: pointer;
+}
+@media (max-width: 500px) {
+  .tabs-container .tabs .tab-link {
+    font-size: 75%;
+    overflow: none;
+  }
 }
 .tabs-container .tabs .tab-link:hover {
   background-color: #7395ae;
