@@ -21,9 +21,6 @@ header {
     .logo-img-container {
         display: flex;
         justify-content: flex-start;
-        border: 1px solid lightcoral;
-        // width: 22%;
-        // width: 30%;
         .logo-img {
             width: 30%;
             text-align: right;
@@ -33,11 +30,10 @@ header {
         }
     
         .logo {
-            border: 1px solid lightcoral;
             width: 70%;
-            // display: flex;
-            // flex-direction: column;
-            align-items: flex-start;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             h3 {
                 font-size: 2rem;
                 text-align: left;
@@ -90,12 +86,26 @@ a:hover {
     }
 }
 
+.main-outer-container {
+    border: 1px solid black;
+    width: 91%;
+    margin: 0 auto;
+    background-color: lightgray;
+    background: linear-gradient(to bottom, lighten(@new-main,10), lighten(@new-main, 65));
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 4rem;
+}
+
 .main-container{
     padding: 1rem;
+    padding-top: 4rem;
     border-radius: 10px;
-    width: 90%;
+    width: 99%;
     margin: 0 auto;
-    background: linear-gradient(to bottom, lighten(@new-main,20), lighten(@new-main, 65));
+    @media ( max-width: 500px) {
+        padding-top: 1rem;
+    }
     display: flex;
     align-items: center;
     .headline {
@@ -104,7 +114,7 @@ a:hover {
         // padding-top: 21.5rem;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-evenly;
         
         @media (max-width: 500px) {
             flex-direction: column;
@@ -117,14 +127,25 @@ a:hover {
             display:flex;
             flex-direction: column;
             justify-content: space-between;
+            .biz-name {
+                text-align: center;
+                border-bottom: 1px solid black;
+            }
             @media (max-width: 500px) {
                 width: 80%;
                 padding-bottom: 4%;
             }    
         }
         .tagline{
+            width: 80%;
+            margin: 0 auto;
             display: flex;
             flex-direction: column;
+            @media (max-width: 500px){
+                flex-direction: row;
+                justify-content: space-around;
+                padding-top: 2%;
+            }
            
             h1 {
                 color: @Dark-Gray;
@@ -147,21 +168,21 @@ a:hover {
             .sub-header-1 {
                 h4 {
                     text-align: left;
-                    margin: 1rem;
+                    margin: .5rem;
                     color: @Dark-Gray;
                 }
             }
             .sub-header-2 {
                 h4 {
                     text-align: center;
-                    margin: 1rem;
+                    margin: .5rem;
                     color: @Dark-Gray;
                 }
             }
             .sub-header-3 {
                 h4 {
                     text-align: right;
-                    margin: 1rem;
+                    margin: .5rem;
                     color: @Dark-Gray;
                 }
             }
@@ -184,18 +205,17 @@ a:hover {
 }
 
 .main-blurb {
-    margin: 1 1rem .5rem 1rem;
-    width: 100%;
+    margin: 0 auto 3rem;
+    width: 99%;
+    height: 6rem;
     display: flex;
     justify-content: center;
+    align-items: center;
     font-style: italic;
     border-top: 2.5px solid @nav-background;
     border-bottom: 2.5px solid @nav-background;
-    // padding: 1rem 6rem;
-    h4 {
-        width: 70%;
-        font-size: 1.8rem;
-    }
+    
+   
 }
 
 .button-container {
@@ -206,14 +226,20 @@ a:hover {
     justify-content: space-evenly;
     align-items: center;
     button {
-        font-size: 2.4rem;
-        background: linear-gradient(to bottom, #2F4F4F, #696969);
-        color: @Light-Gray;
+        font-size: 2.5vw;
+        font-family: inherit;
+        height: 10vw;
+        width: 30vw;
+        background: linear-gradient(to top, @nav-background, lighten(@nav-background, 30));
+        color: @Dark-Gray;
         border-radius: 12px;
-        padding: 2%;
+        padding: 3%;
         &:hover {
-            background-color: lighten(@nav-background, 15);
+            background: whitesmoke;
             color: darken(@Light-Gray, 50);
+            font-weight: bold;
+            cursor: pointer;
+            
         }
     }
 }
