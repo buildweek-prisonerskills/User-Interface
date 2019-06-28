@@ -431,7 +431,7 @@ a:hover {
   text-align: center;
   margin-top: 2%;
 }
-.about-main .about-cards-container {
+.about-cards-container {
   padding: 1%;
   margin: 2% auto;
   width: 80%;
@@ -439,7 +439,7 @@ a:hover {
   flex-flow: row wrap;
   justify-content: center;
 }
-.about-main .about-cards-container .about-card {
+.about-cards-container .about-card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -451,21 +451,40 @@ a:hover {
   border-radius: 10px;
   box-shadow: 2px 4px 5px #534B52;
 }
-.about-main .about-cards-container .about-card h5 {
+.about-cards-container .about-card h5 {
   margin: 3% 0.5% 3% 0.5%;
   padding: 1%;
   font-size: 2.2rem;
   font-weight: bold;
 }
-.about-main .about-cards-container .about-card p {
+.about-cards-container .about-card p {
   font-size: 1.75rem;
   padding: 1%;
   color: #534B52;
 }
-.about-main .about-cards-container .about-card img {
+.about-cards-container .about-card img {
   width: 97%;
   border-radius: 8px;
   padding: 0.5rem;
+}
+.about-cards-container .about-card button {
+  font-size: 0.85vw;
+  font-family: inherit;
+  height: 2vw;
+  width: 10vw;
+  background: linear-gradient(to top, #7395ae, #d4dee6);
+  color: #534B52;
+  border-radius: 12px;
+  padding: 3%;
+}
+.about-cards-container .about-card button a {
+  text-decoration: none;
+}
+.about-cards-container .about-card button:hover {
+  background: whitesmoke;
+  color: #4b5768;
+  font-weight: bold;
+  cursor: pointer;
 }
 .tabs-container {
   padding: 0.5rem;
