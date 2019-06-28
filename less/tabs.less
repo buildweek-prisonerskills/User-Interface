@@ -1,23 +1,13 @@
 .tabs-container {
-    // background: linear-gradient(to right, @nav-background, white);
     padding: .5rem;
     width: 65%;
-    height: 30rem;
     margin: 0 auto 4%;
     display: flex;
-    // border: 1px solid @navigation-text;
-    // box-shadow: 2px 4px 5px @Dark-Gray;
     border-radius: 10px;
     overflow: hidden;
-    @media(max-width: 800px) {
-        width: 75%;
-    }
-    @media(max-width: 500px) {
-        width: 85%;
-    }
     .tabs {
         width: 99%;
-        HEIGHT: 100%;
+        height: 100%;
         background-color: @nav-background;
         border-radius: 10px;
         box-shadow: 2px 4px 5px @Dark-Gray;
@@ -25,13 +15,10 @@
         .tabs-content {
           border-top: 1px solid black;  
           width: 95%;
-          height: 6rem;
+          height: 99%;
           display: flex;
           justify-content: center;
           padding: 2%;
-          @media(max-width: 800px) {
-              height: 10rem;
-          }
         }
 
         .a-tab {
@@ -42,9 +29,12 @@
             .tab-item-text {
                 p {
                     color: white;
-                    font-size: 1.75rem;
-                    @media(max-width: 700px) {
-                        font-size: 1.5rem;
+                    font-size: 1.75vw;
+                    @media (max-width: 800px) {
+                        font-size: 2.25vw;
+                    }
+                    @media (max-width: 500px) {
+                        font-size: 2.5vw;
                     }
                 }
             }
@@ -58,12 +48,7 @@
             display: flex;
             width: 90%;
             // justify-content: flex-start;
-            h4 {
-                font-size: 1.75rem;
-                @media (max-width: 800px) {
-                    font-size: 1.25rem;
-                }
-            }
+            
             
         }
         .tab-link {
@@ -76,17 +61,23 @@
             padding: 2rem 1rem;
             border-right: 4px solid @nav-background;
             cursor: pointer;
-            @media(max-width: 500px) {
-                // width: 0%;
-                font-size: 75%;
-                overflow: none;
+            h4 {
+                font-weight: bold;
+                font-size: 2.1vw;
+                @media (max-width: 800px) {
+                    font-size: 2.3vw;
+                }
+                @media(max-width: 500px) {
+                    overflow: none;
+                    font-size: 2.5vw;
+                }
             }
             &:hover {
                 background-color: @nav-background;
             }
         }
+
         .tab-link-selected {
-            // z-index: 2;
             background-color: white;
             color: black;
             &:hover {
@@ -95,7 +86,7 @@
         }
     
     } //<--- .tabs
-} 
+} //<--- .tabs-container
 
 .outer-tabs-container {
     width: 100%;
@@ -107,5 +98,4 @@
         text-align: center;
         margin-bottom: 0
     }
-    // 
 }
