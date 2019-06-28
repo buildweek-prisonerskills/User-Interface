@@ -261,7 +261,7 @@ h1 {
   transition-duration: 0.4s;
   cursor: pointer;
 }
-.btn .button1:hover {
+.btn .button1 .button1:hover {
   background-color: black;
   color: white;
   border: 2px solid grey;
@@ -272,57 +272,118 @@ h1 {
   padding-top: 40px;
   padding-bottom: 60px;
 }
-.jonh3 {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 10px;
-  font-size: 2rem;
-  font-weight: bold;
-}
-.jon {
+.cardcontainer1 {
+  width: 99%;
   display: flex;
   justify-content: center;
 }
-.joncontent {
+.cardcontainer1 .aboutcard1 {
+  width: 40%;
+  border: 2px solid black;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  padding: 20px 400px;
-  padding-bottom: 100px;
+  align-items: center;
   font-size: 1.5rem;
 }
-.topnames {
+.top3 {
   display: flex;
-  justify-content: space-around;
-  font-size: 2rem;
-  font-weight: bold;
-  padding-bottom: 10px;
+  flex-direction: wrap;
 }
-.topimages {
-  display: flex;
-  justify-content: space-around;
+@media (max-width: 500px) {
+  .top3 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
-.topcontent {
+.top3 .cardcontainer2 {
+  width: 40%;
   display: flex;
-  justify-content: space-around;
+}
+.top3 .cardcontainer2 .aboutcard2 {
+  width: 99%;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-size: 1.5rem;
 }
-.bottomnames {
+.top3 .cardcontainer3 {
+  width: 40%;
   display: flex;
-  justify-content: space-around;
-  font-size: 2rem;
-  font-weight: bold;
-  padding-bottom: 10px;
-  padding-top: 30px;
 }
-.bottomimages {
+.top3 .cardcontainer3 .aboutcard3 {
+  width: 99%;
+  border: 2px solid black;
   display: flex;
-  justify-content: space-around;
-}
-.bottomcontent {
-  display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-size: 1.5rem;
-  padding: 0px 50px;
+}
+.top3 .cardcontainer4 {
+  width: 40%;
+  display: flex;
+}
+.top3 .cardcontainer4 .aboutcard4 {
+  width: 99%;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.bottom3 {
+  display: flex;
+}
+@media (max-width: 500px) {
+  .bottom3 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.bottom3 .cardcontainer5 {
+  width: 40%;
+  display: flex;
+}
+.bottom3 .cardcontainer5 .aboutcard5 {
+  width: 99%;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.bottom3 .cardcontainer6 {
+  width: 40%;
+  display: flex;
+}
+.bottom3 .cardcontainer6 .aboutcard6 {
+  width: 99%;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.bottom3 .cardcontainer7 {
+  width: 40%;
+  display: flex;
+}
+.bottom3 .cardcontainer7 .aboutcard7 {
+  width: 99%;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
 }
 .body2 {
   background-color: lightgrey;
